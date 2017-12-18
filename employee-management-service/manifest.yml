@@ -1,0 +1,7 @@
+applications:
+- name: employee-management-service
+  random-route: true
+  services:
+  - employee-management-db
+  path: build/libs/employee-management-service-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
